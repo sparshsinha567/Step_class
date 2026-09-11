@@ -9,8 +9,7 @@ This repository follows the structured feature-branch workflow for the STEP Seme
 - **`feature/session_2`**: Built-In Methods, StringBuilder & Character Processing (`session_two_builtin_methods_and_stringbuilder/`).
 - **`feature/session_3`**: OOP Classes, Encapsulation & Constructor Overloading (`session_three_oop_constructors_and_classes/`).
 - **`feature/session_4`**: Java Keywords (`this`, `final`, `static`, `instanceof`) (`session_four_constructors_and_keywords/`).
-- **`feature/session_5`**: Access Modifiers, Encapsulation & Object Modeling (`session_five_access_modifiers_and_object_modeling/`).
-- **`feature/session_6`**: Access Modifiers, Encapsulation, JavaBeans & Immutability (`session_six_access_modifiers_and_encapsulation/`).
+- **`feature/session_5`**: Access Modifiers, Encapsulation, JavaBeans & Immutability (`session_five_access_modifiers_and_encapsulation/`).
 
 ---
 
@@ -44,13 +43,7 @@ This repository follows the structured feature-branch workflow for the STEP Seme
 - **Concepts Applied:** Constructor chaining (`this()`), `final` methods, `static` initialization blocks, `instanceof` type checking & safe downcasting.
 - **Status:** Completed & Tested.
 
-### Session 5: Access Modifiers, Encapsulation & Object Modeling
-- **Work Done:**
-  - Implemented Object Modeling Demos: Fee Account Access Modifiers, JavaBean Standard Student Bean, Read-Only & Write-Only Properties, Immutable Records (Wither Pattern), Defensive Copying with Mutable Arrays, Complete Student Profile Synthesis.
-- **Concepts Applied:** `private`, `default`, `protected`, `public`, JavaBean Conventions (`isX()`), Defensive Copying (`.clone()`), Immutability.
-- **Status:** Completed & Tested.
-
-### Session 6: Access Modifiers, Encapsulation, JavaBeans & Immutability
+### Session 5: Access Modifiers, Encapsulation, JavaBeans & Immutability
 - **Work Done:**
   - Implemented Practice Problems (`class_problems`): Movie Ticket Field Visibility Checker, Subclass Ticket Access Checker, Seat Booking Encapsulation Guard, Movie Booking Profile JavaBean & OTP Property, Immutable Booking Receipt & Nightly Settlement Ledger.
   - Implemented Assignment Problems (`assignment_problems`): Membership Field Reach Checker, Reference Desk Subclass Reach, Book Copy Circulation Guard, Library Member JavaBean & Security Answer Property, Immutable Loan Receipt & Nightly Circulation Ledger.
