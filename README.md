@@ -10,6 +10,7 @@ This repository follows the structured feature-branch workflow for the STEP Seme
 - **`feature/session_3`**: OOP Classes, Encapsulation & Constructor Overloading (`session_three_oop_constructors_and_classes/`).
 - **`feature/session_4`**: Java Keywords (`this`, `final`, `static`, `instanceof`) (`session_four_constructors_and_keywords/`).
 - **`feature/session_5`**: Access Modifiers, Encapsulation, JavaBeans & Immutability (`session_five_access_modifiers_and_encapsulation/`).
+- **`feature/session_6`**: OOP Inheritance & Polymorphism (`session_six_inheritance_and_polymorphism/`).
 
 ---
 
@@ -48,4 +49,15 @@ This repository follows the structured feature-branch workflow for the STEP Seme
   - Implemented Practice Problems (`class_problems`): Movie Ticket Field Visibility Checker, Subclass Ticket Access Checker, Seat Booking Encapsulation Guard, Movie Booking Profile JavaBean & OTP Property, Immutable Booking Receipt & Nightly Settlement Ledger.
   - Implemented Assignment Problems (`assignment_problems`): Membership Field Reach Checker, Reference Desk Subclass Reach, Book Copy Circulation Guard, Library Member JavaBean & Security Answer Property, Immutable Loan Receipt & Nightly Circulation Ledger.
 - **Concepts Applied:** Java's 4 access levels, `protected` cross-package subclass access (`OWN_TYPE` vs `PARENT_TYPE`), encapsulation & boundary validation, JavaBean conventions (`isX()`), write-once & write-only properties, true immutability with defensive copying (`.clone()`), wither pattern, static blocks, `instanceof` polymorphic dispatch, null-safety.
+- **Status:** Completed & Tested.
+
+### Session 6: OOP Inheritance & Polymorphism
+- **Work Done:**
+  - Implemented Practice Problems (`class_problems`):
+    1. `LibraryBatchEnrollment.java` — Single inheritance, constructor validation with `IllegalArgumentException`, batch enrollment loop.
+    2. `MembershipHierarchyClassifier.java` — Multilevel & hierarchical inheritance, `instanceof` generation classification, polymorphic total calculation.
+    3. `StudentFineLedger.java` — Method overriding (`@Override`), `super.chargeFine()` call, defensive copy of fine history array.
+    4. `WeeklyCirculationReport.java` — Polymorphic batch printing, `StringBuilder` assembly, safe downcast guarded by `instanceof`.
+    5. `NightlyCirculationAudit.java` — Static counter & `final memberNumber`, non-regex renewal code validation, method overloading, null-safe batch audit.
+- **Concepts Applied:** Single / Multilevel / Hierarchical inheritance, method overriding, `super`, runtime polymorphism, `instanceof` type guards, defensive copying, `final` and `static` members.
 - **Status:** Completed & Tested.
