@@ -59,5 +59,11 @@ This repository follows the structured feature-branch workflow for the STEP Seme
     3. `StudentFineLedger.java` — Method overriding (`@Override`), `super.chargeFine()` call, defensive copy of fine history array.
     4. `WeeklyCirculationReport.java` — Polymorphic batch printing, `StringBuilder` assembly, safe downcast guarded by `instanceof`.
     5. `NightlyCirculationAudit.java` — Static counter & `final memberNumber`, non-regex renewal code validation, method overloading, null-safe batch audit.
+  - Implemented Assignment Problems (`assignment_problems`):
+    1. `GymBatchSignup.java` — Gym membership single inheritance, constructor validation, batch sign-up validator with `try/catch`.
+    2. `GymMembershipHierarchy.java` — Multilevel (`EliteMember`) & hierarchical (`GroupClassMember`) inheritance, `instanceof` tier classification, polymorphic session tally.
+    3. `PremiumLoyaltyFineLedger.java` — Late-fee discount override with `super.chargeLateFee(amount / 2)`, defensive copy of history array.
+    4. `MonthlyAttendanceAnnouncer.java` — Polymorphic attendance announcement, `StringBuilder` assembly, safe downcasting guarded by `instanceof`.
+    5. `GymWeeklyCheckInAudit.java` — Static counter & `final membershipNumber`, non-regex referral code validation, overloaded `payFee()`, null-safe `instanceof` audit.
 - **Concepts Applied:** Single / Multilevel / Hierarchical inheritance, method overriding, `super`, runtime polymorphism, `instanceof` type guards, defensive copying, `final` and `static` members.
 - **Status:** Completed & Tested.
