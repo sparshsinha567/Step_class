@@ -11,6 +11,7 @@ This repository follows the structured feature-branch workflow for the STEP Seme
 - **`feature/session_4`**: Java Keywords (`this`, `final`, `static`, `instanceof`) (`session_four_constructors_and_keywords/`).
 - **`feature/session_5`**: Access Modifiers, Encapsulation, JavaBeans & Immutability (`session_five_access_modifiers_and_encapsulation/`).
 - **`feature/session_6`**: OOP Inheritance & Polymorphism (`session_six_inheritance_and_polymorphism/`).
+- **`feature/session_7`**: Abstract Classes & Interfaces (`session_seven_abstract_classes_and_interfaces/`).
 
 ---
 
@@ -67,3 +68,21 @@ This repository follows the structured feature-branch workflow for the STEP Seme
     5. `GymWeeklyCheckInAudit.java` — Static counter & `final membershipNumber`, non-regex referral code validation, overloaded `payFee()`, null-safe `instanceof` audit.
 - **Concepts Applied:** Single / Multilevel / Hierarchical inheritance, method overriding, `super`, runtime polymorphism, `instanceof` type guards, defensive copying, `final` and `static` members.
 - **Status:** Completed & Tested.
+
+### Session 7: Abstract Classes & Interfaces
+- **Work Done:**
+  - Implemented Practice Problems (`class_problems`):
+    1. `TalkingToyBox.java` — Abstract class `Toy` preventing direct instantiation, static counter assigning final `toyId`, concrete subclasses `ToyCar` and `ToyRobot` implementing `makeSound()`.
+    2. `WarehouseLabelPrinter.java` — Common interface `Printable` with `printLabel()`, implemented directly across unrelated classes `PackageBox` and `Invoice`, batch polymorphic printing via `printAll()`.
+    3. `OrchestraWarmUpRoutine.java` — Three-tier multilevel inheritance (`Instrument` -> `StringInstrument` -> `Violin`), abstract method implementation, method overriding with chained `super.play()` calls.
+    4. `SmartKitchenAssistant.java` — Abstract class `KitchenTool` with JavaBean encapsulation for bounded `speedLevel` (1–5) and `prepare()`, interface `Washable` with `clean()`, concrete implementation `Blender`.
+    5. `PackageDropOffLog.java` — Abstract class `DeliveryNote` demonstrating compile-time method overloading (`confirmDelivery(signature)` delegating to `confirmDelivery()`), subclasses `ParcelNote` and `LetterNote`, and polymorphic batch logging `logAll()`.
+  - Implemented Assignment Problems (`assignment_problems`):
+    1. `MorningWakeUpCircuit.java` — Interface `Ringable` with `ring()`, implemented by unrelated classes `AlarmClock` and `Doorbell`, polymorphic batch execution via `ringAll()`.
+    2. `GalleryDescriptionCards.java` — Abstract class `ArtPiece` with shared static ID generation counter in constructor, abstract `describe()`, concrete subclasses `Painting` and `Sculpture`.
+    3. `BackyardToolshedRoutine.java` — Multilevel hierarchy (`GardenTool` -> `CuttingTool` -> `Pruner`), constructor chaining with `super()`, method overriding reusing parent output via `super.use()`.
+    4. `DigitalClassroomSetup.java` — Abstract class `ClassroomDevice` (`operate()`), interface `Chargeable` with method overloading (`charge()` and `charge(int minutes)`), concrete implementation `Tablet`.
+    5. `SkylineDeliveryFleet.java` — Abstract `Drone`, interface `Trackable` (`getLocation()`), hierarchical branching (`DeliveryDrone` implements `Trackable`, sibling `ScoutDrone` does not), unrelated `GroundRobot` implementing `Trackable`, safe type checking with `instanceof` and downcasting in `getLocationIfTrackable()`.
+- **Concepts Applied:** Abstract classes vs Interfaces, abstract methods, contract enforcement, static auto-incrementing ID generators in abstract constructors, multilevel inheritance chaining with `super`, compile-time polymorphism (method overloading), runtime polymorphism (method overriding & dynamic dispatch), interface-based decoupling of unrelated types, `instanceof` type checking & safe downcasting.
+- **Status:** Completed & Tested.
+
