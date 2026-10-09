@@ -12,6 +12,8 @@ This repository follows the structured feature-branch workflow for the STEP Seme
 - **`feature/session_5`**: Access Modifiers, Encapsulation, JavaBeans & Immutability (`session_five_access_modifiers_and_encapsulation/`).
 - **`feature/session_6`**: OOP Inheritance & Polymorphism (`session_six_inheritance_and_polymorphism/`).
 - **`feature/session_7`**: Abstract Classes & Interfaces (`session_seven_abstract_classes_and_interfaces/`).
+- **`feature/session_8`**: Object-Oriented Modeling & System Design (`session_eight_ood_and_system_design/`).
+- **`feature/session_9`**: Data Structures & Algorithms (`session_nine_data_structures/`).
 
 ---
 
@@ -86,3 +88,38 @@ This repository follows the structured feature-branch workflow for the STEP Seme
 - **Concepts Applied:** Abstract classes vs Interfaces, abstract methods, contract enforcement, static auto-incrementing ID generators in abstract constructors, multilevel inheritance chaining with `super`, compile-time polymorphism (method overloading), runtime polymorphism (method overriding & dynamic dispatch), interface-based decoupling of unrelated types, `instanceof` type checking & safe downcasting.
 - **Status:** Completed & Tested.
 
+### Session 8: Object-Oriented Modeling & System Design
+- **Work Done:**
+  - Implemented In-Class / Practice Problems (`class_problems`):
+    1. `VehicleRentalSystem.java` — Abstract base `Vehicle` (`Sedan`, `SUV`, `Truck`), dynamic daily charge calculation, and guarded availability state tracking across rentals.
+    2. `EmployeeLeaveRequestWorkflow.java` — State transitions (`PENDING`, `APPROVED`, `REJECTED`), state revert guards preventing approved/rejected requests returning to pending, and specialization for `FullTimeEmployee`, `PartTimeEmployee`, and `Contractor`.
+    3. `OnlineExaminationSystem.java` — Abstract `Question` self-evaluation contract with concrete `MultipleChoiceQuestion`, `TrueFalseQuestion`, and `ShortAnswerQuestion`; single attempt lock preventing modifications after submission.
+    4. `HotelBookingSystem.java` — Abstract `Room` hierarchy (`StandardRoom`, `DeluxeRoom`, `Suite`), dynamic pricing per duration, interval overlap detection, and cancellation management.
+    5. `PaymentProcessingSystem.java` — Polymorphic `PaymentMethod` interface (`CreditCardPayment`, `PayPalPayment`, `BankTransferPayment`), empty order validation, and transactional order status updating.
+    - Comprehensive `QUIZ_AND_CONCEPTS.md` covering OOP principles, UML multiplicity (`1 --- 1..*`), composition vs aggregation vs association, realization, generalization, sequence and state diagrams.
+  - Implemented Assignment Problems (`assignment_problems`):
+    1. `HostelLaundryQueue.java` — `WashType` interface (`Quick`, `Normal`, `Heavy`, extensible `Delicate`), duration and charge rules, encapsulated busy/free status in `WashingMachine`.
+    2. `AssignmentSubmissionPortal.java` — Abstract `Assignment` with specialized late penalty rates (`CodingAssignment` 10%/day, `WrittenAssignment` 20%/day), submission status encapsulation, and resubmission lock once graded.
+    3. `CampusPremiereTicketCounter.java` — `Seat` hierarchy (`Regular`, `Premium`, `Recliner`), per-seat price calculation, 6-seat booking cap, duplicate booking prevention, and seat release on cancellation before show start.
+    4. `FitZoneMembershipDesk.java` — Abstract `MembershipPlan` hierarchy with discount formulas (`Monthly`, `Quarterly`, `Annual`, `HalfYearly`), state machine (`Active`, `Frozen`, `Expired`), and invalid state transition guards.
+    5. `CampusNoticeBroadcaster.java` — `NotificationChannel` interface (`EmailChannel`, `SmsChannel`, `AppChannel`, extensible `WhatsAppChannel`), notice title & department validation, and multi-channel targeted broadcasting to students.
+- **Concepts Applied:** Encapsulation & state guards, Generalization vs Realization, Runtime Polymorphism & Dynamic Dispatch, Interface-driven extensibility (Open/Closed Principle), UML Multiplicity, Association vs Aggregation vs Composition lifecycles, Finite State Machine validations.
+- **Status:** Completed & Tested.
+
+### Session 9: Data Structures & Algorithms
+- **Work Done:**
+  - Implemented In-Class / Practice Problems (`class_problems`):
+    1. `LibraryCatalogLookup.java` — Logarithmic Binary Search ($O(\log n)$ time, $O(1)$ space) on pre-sorted ISBN catalog tuples.
+    2. `WarehouseGridSummary.java` — 2D array traversal ($O(m \times n)$ time, $O(1)$ space) calculating running total items and first-encountered maximum storage bin coordinates.
+    3. `PairWithTargetSum.java` — Hash Set complement lookup ($O(n)$ time, $O(n)$ space) versus brute-force nested loops ($O(n^2)$ time, $O(1)$ space).
+    4. `PairWithTargetSumArray.java` — Two-pointer approach on sorted copy ($O(n \log n)$ time, $O(n)$ space) compared against optimal Hash Set ($O(n)$ time).
+    5. `MaxContainerArea.java` — Two-pointer inward greedy boundary search ($O(n)$ time, $O(1)$ space) and comparison with $O(n^2)$ brute-force approach.
+    - Comprehensive `QUIZ_AND_CONCEPTS.md` covering index access complexity, linear vs non-linear data structures, cache space-time trade-offs, Big-O constant factor elimination ($2n \to O(n)$), and traversal strategies (linear single path vs non-linear DFS/BFS branching).
+  - Implemented Assignment Problems (`assignment_problems`):
+    1. `ClassTopperFinder.java` — 2D student-subject grid summation ($O(m \times n)$ time, $O(1)$ space) with strict tie-breaking favoring the smallest row index.
+    2. `MergeTokenQueues.java` — Two-pointer linear merge ($O(m + n)$ time, $O(m + n)$ space) of pre-sorted arrays without post-concatenation sorting ($O((m+n)\log(m+n))$).
+    3. `MostPopularCanteenOrder.java` — Hash map frequency counting combined with original order traversal ($O(n)$ time, $O(k)$ space) to break ties by first occurrence.
+    4. `HotWeatherAlertWindows.java` — Fixed-size sliding window ($O(n)$ time, $O(1)$ space) tracking contiguous $k$-hour temperature averages and integer threshold comparison ($sum \ge k \times threshold$) to avoid decimal division.
+    5. `TicketPriceSlotFinder.java` — Binary search ($O(\log n)$ time, $O(1)$ space) finding exact price index or insertion slot for pre-sorted unique price lists.
+- **Concepts Applied:** Asymptotic Big-O time and auxiliary space analysis, 1D & 2D array traversals, Hash tables (expected $O(1)$ lookup/insertion), Two-Pointer technique, Fixed-size Sliding Window, Logarithmic Binary Search and lower-bound insertion.
+- **Status:** Completed & Tested.
