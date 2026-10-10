@@ -14,6 +14,7 @@ This repository follows the structured feature-branch workflow for the STEP Seme
 - **`feature/session_7`**: Abstract Classes & Interfaces (`session_seven_abstract_classes_and_interfaces/`).
 - **`feature/session_8`**: Object-Oriented Modeling & System Design (`session_eight_ood_and_system_design/`).
 - **`feature/session_9`**: Data Structures & Algorithms (`session_nine_data_structures/`).
+- **`feature/session_10`**: Comprehensive OOP & Data Structures Practice (`session_ten_practice/` & `week 10 practice/`).
 
 ---
 
@@ -122,4 +123,18 @@ This repository follows the structured feature-branch workflow for the STEP Seme
     4. `HotWeatherAlertWindows.java` — Fixed-size sliding window ($O(n)$ time, $O(1)$ space) tracking contiguous $k$-hour temperature averages and integer threshold comparison ($sum \ge k \times threshold$) to avoid decimal division.
     5. `TicketPriceSlotFinder.java` — Binary search ($O(\log n)$ time, $O(1)$ space) finding exact price index or insertion slot for pre-sorted unique price lists.
 - **Concepts Applied:** Asymptotic Big-O time and auxiliary space analysis, 1D & 2D array traversals, Hash tables (expected $O(1)$ lookup/insertion), Two-Pointer technique, Fixed-size Sliding Window, Logarithmic Binary Search and lower-bound insertion.
+- **Status:** Completed & Tested.
+
+### Session 10: Comprehensive OOP & Data Structures Practice (Category B)
+- **Work Done:**
+  - Implemented Coding Problems (`week 10 practice` / `session_ten_practice`):
+    1. `BankAccountWithdrawalSystem.java` — Abstract base `Account` with polymorphism, `SavingsAccount` with minimum balance guard ($1000$), `CurrentAccount` with overdraft limit guard ($-5000$).
+    2. `CampusVehiclePassSystem.java` — `Vehicle` hierarchy (`Bike`, `Car`, `EBike`, `ECar`), `Chargeable` interface for electric vehicles, fee calculation, and charging bay allocation verification.
+    3. `StudentClubRegistrationManagement.java` — Unique member registration using `HashSet` with properly overridden `equals()` and `hashCode()` based on roll number, duplicate rejection, member counting, and presence checks.
+    4. `ClassMarksGridAnalysis.java` — 2D array marks analysis across 3 subjects, student total calculation, subject average formatted to two decimal places, and topper identification.
+    5. `PayrollRegisterSystem.java` — Abstract `Staff` hierarchy (`FullTime`, `PartTime`, `Intern`), customized pay calculations, `toString()` payslip formatting, total payroll aggregation, and top earner tracking.
+    - Comprehensive `QUIZ_AND_CONCEPTS.md` covering:
+      - 20 Quiz solutions with detailed justifications (Inheritance, Polymorphism, Access Modifiers, Interfaces, Abstract Classes, UML Class & Sequence Diagrams, Upcasting/Downcasting, `equals()`/`hashCode()`).
+      - 10 Concept question answers (Compile-time vs Runtime resolution, Constructor chaining & `super(...)`, Concrete vs Abstract vs Interfaces, Multiple interface realization, `equals()`/`hashCode()` contract in hash-based collections, Shallow vs Deep copying, Inner vs Static nested classes, Array time complexity, Dynamic method dispatch, and IS-A vs CAN-DO design decisions).
+- **Concepts Applied:** Runtime Polymorphism, Dynamic Method Dispatch, Abstract Classes vs Interfaces, Hash Sets and Object Equivalence Contracts (`equals`/`hashCode`), 2D Matrix traversal and aggregations, Defensive State Validation, and Big-O Complexity.
 - **Status:** Completed & Tested.
