@@ -14,7 +14,8 @@ This repository follows the structured feature-branch workflow for the STEP Seme
 - **`feature/session_7`**: Abstract Classes & Interfaces (`session_seven_abstract_classes_and_interfaces/`).
 - **`feature/session_8`**: Object-Oriented Modeling & System Design (`session_eight_ood_and_system_design/`).
 - **`feature/session_9`**: Data Structures & Algorithms (`session_nine_data_structures/`).
-- **`feature/session_10`**: Comprehensive OOP & Data Structures Practice (`session_ten_practice/` & `week 10 practice/`).
+- **`feature/session_10`**: Comprehensive OOP & Data Structures Practice (`session_ten_practice/`, `week 10 practice/` & `week 10 assignment/`).
+- **`feature/session_11`**: Data Structures — Linked Lists (`session_eleven_linked_lists/`, `week 11 practice/` & `week 11 assignment/`).
 
 ---
 
@@ -127,7 +128,7 @@ This repository follows the structured feature-branch workflow for the STEP Seme
 
 ### Session 10: Comprehensive OOP & Data Structures Practice (Category B)
 - **Work Done:**
-  - Implemented Coding Problems (`week 10 practice` / `session_ten_practice`):
+  - Implemented Practice Problems (`week 10 practice` / `session_ten_practice/class_problems`):
     1. `BankAccountWithdrawalSystem.java` — Abstract base `Account` with polymorphism, `SavingsAccount` with minimum balance guard ($1000$), `CurrentAccount` with overdraft limit guard ($-5000$).
     2. `CampusVehiclePassSystem.java` — `Vehicle` hierarchy (`Bike`, `Car`, `EBike`, `ECar`), `Chargeable` interface for electric vehicles, fee calculation, and charging bay allocation verification.
     3. `StudentClubRegistrationManagement.java` — Unique member registration using `HashSet` with properly overridden `equals()` and `hashCode()` based on roll number, duplicate rejection, member counting, and presence checks.
@@ -136,5 +137,36 @@ This repository follows the structured feature-branch workflow for the STEP Seme
     - Comprehensive `QUIZ_AND_CONCEPTS.md` covering:
       - 20 Quiz solutions with detailed justifications (Inheritance, Polymorphism, Access Modifiers, Interfaces, Abstract Classes, UML Class & Sequence Diagrams, Upcasting/Downcasting, `equals()`/`hashCode()`).
       - 10 Concept question answers (Compile-time vs Runtime resolution, Constructor chaining & `super(...)`, Concrete vs Abstract vs Interfaces, Multiple interface realization, `equals()`/`hashCode()` contract in hash-based collections, Shallow vs Deep copying, Inner vs Static nested classes, Array time complexity, Dynamic method dispatch, and IS-A vs CAN-DO design decisions).
-- **Concepts Applied:** Runtime Polymorphism, Dynamic Method Dispatch, Abstract Classes vs Interfaces, Hash Sets and Object Equivalence Contracts (`equals`/`hashCode`), 2D Matrix traversal and aggregations, Defensive State Validation, and Big-O Complexity.
+  - Implemented Assignment Problems (`week 10 assignment` / `session_ten_practice/assignment_problems`):
+    1. `NoticeBoardShuffle.java` — Optimized Bubble Sort with early termination flag (`bubbleStats`), returning pass and swap metrics. Demonstrates $O(n)$ best-case verification on already sorted inputs.
+    2. `HackathonRegistrationDesk.java` — Stable in-place Insertion Sort (`sortTeams`) using strict inequality key comparison (`>`) to maintain submission order for equal team sizes.
+    3. `AttendanceDisorderScore.java` — Divide-and-conquer Merge Sort inversion counting (`countInversions`) running in $O(n \log n)$ time and $O(n)$ auxiliary space.
+    4. `PlacementCutoff.java` — Average $O(n)$ QuickSelect algorithm (`kthHighest`) using Lomuto partition to identify cutoff score without full $O(n \log n)$ sorting.
+    5. `ContestLeaderboard.java` — Stable non-comparison Counting Sort (`leaderboard`) with inverted keys (`100 - marks`) running in $O(n + 101)$ time and preserving entry order for ties.
+- **Concepts Applied:** Runtime Polymorphism, Dynamic Method Dispatch, Abstract Classes vs Interfaces, Hash Sets and Object Equivalence Contracts (`equals`/`hashCode`), 2D Matrix traversal, In-Place Sorting (Bubble Sort, Insertion Sort), Divide-and-Conquer Inversion Counting (Merge Sort), QuickSelect Partitioning, Non-Comparison Stable Distribution Sorting (Counting Sort), Stability & Big-O Complexity Analysis.
+- **Status:** Completed & Tested.
+
+### Session 11: Data Structures — Linked Lists (Category B)
+- **Work Done:**
+  - Implemented Practice Problems (`week 11 practice` / `session_eleven_linked_lists/class_problems`):
+    1. `PrintCircularSinglyLinkedList.java` — Traversal of circular singly linked list using `do-while` loop without relying on null checks.
+    2. `InsertAtTailDoublyLinkedList.java` — Tail insertion in doubly linked list updating both `prev` and `next` references from `head`.
+    3. `RemoveFirstKNodesSinglyLinkedList.java` — Deletion of the first $k$ nodes from singly linked list with boundary and edge case handling.
+    4. `DeleteNthNodeSinglyLinkedList.java` — Deletion of 1-based $n$-th node from singly linked list handling head and internal positions.
+    5. `SplitSinglyLinkedListInHalf.java` — Fast and slow pointer technique to bisect singly linked list into two properly terminated halves.
+    6. `ReverseFirstKNodesSinglyLinkedList.java` — In-place pointer reversal of the first $k$ nodes while preserving remaining downstream sequence.
+    7. `CountNodesSinglyLinkedList.java` — Linear traversal counting nodes in singly linked list.
+    8. `CheckIfEmptySinglyLinkedList.java` — $O(1)$ null-head check for empty singly linked list.
+    9. `InsertAtEndCircularSinglyLinkedList.java` — Tail insertion maintaining circular reference back to head.
+    10. `DeleteLastNodeDoublyLinkedList.java` — Traversal and detachment of tail node updating predecessor references in doubly linked list.
+    - Comprehensive `QUIZ_AND_CONCEPTS.md` covering:
+      - 10 Quiz solutions with detailed justifications (Node storage components, Dynamic memory allocation vs arrays, Index access complexity, Bidirectional traversal benefits, Circular list termination invariants, Dummy/Sentinel nodes in head modifications, Cycle detection via Floyd's algorithm, In-place reversal auxiliary space, Relinking vs copying array memory efficiency, and Reference overwriting risks).
+      - 5 Concept question answers (Head vs Tail insertion complexity and tail pointer impact, Predecessor requirements in singly vs doubly linked lists, Traversal performance & CPU cache locality vs contiguous arrays, Memory efficiency of relinking vs array copying, and 'next' pointer traversal invariants).
+  - Implemented Assignment Problems (`week 11 assignment` / `session_eleven_linked_lists/assignment_problems`):
+    1. `PriorityTokenInsertion.java` — Custom singly linked list supporting `addFirst`, `addLast`, and `insertAt(index, token)` with detailed operation complexity analysis.
+    2. `CancelledOrdersCleanup.java` — Batch deletion `removeAll(head, code)` in singly linked list handling head and internal occurrences in $O(n)$ time and $O(1)$ space.
+    3. `ReverseTheQueue.java` — In-place $O(n)$ time $O(1)$ auxiliary space iterative pointer reversal `reverse(head)` without allocating new nodes.
+    4. `TrainCoachesBothWays.java` — Doubly linked list with `head` and `tail` references supporting `addLast`, `remove(name)`, `printForward`, and `printBackward`.
+    5. `RoundRobinGameTurns.java` — Circular singly linked list with `tail` reference supporting $O(1)$ `addLast(name)` and cyclic turn simulation `printTurns(turns)`.
+- **Concepts Applied:** Singly Linked Lists, Doubly Linked Lists, Circular Linked Lists, Fast & Slow Pointers (Floyd's Cycle / Tortoise & Hare), Sentinel / Dummy Nodes, Pointer Relinking, In-Place Reversal, Dynamic Heap Memory Allocation, Time and Space Complexity Analysis.
 - **Status:** Completed & Tested.
